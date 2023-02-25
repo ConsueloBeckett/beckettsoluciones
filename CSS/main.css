@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  }
+
+ul{
+  list-style-type:none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+h3, h4 {
+  color: black;
+  background-color: rgb(243, 186, 44);
+  text-align: center;
+  }  
+
+body{
+  background-color: rgb(223, 213, 220);
+}
+
+.headline{
+padding: 10px 35px;
+background-color: rgb(243, 186, 44);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logoImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.subMenu{
+  display: flex;
+  gap: 17px
+}
+
+.containerIlust{  /* index.html */
+background-image: url("../img/index/IlustracionB.png");
+background-size:cover;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: baseline;
+}
+
+.works{   /* nuestro_trabajo.html */
+  padding: 90px;
+}
+
+ .cards{  /* nuestro_trabajo.html */
+display: flex;
+gap: 45px;
+ }
+
+.card img{  /* nuestro_trabajo.html */
+  width: 100%;
+}
+
+.services{ /* servicios.html */
+  padding: 90px;
+}
+
+.workers{ /* conocenos.html */
+  padding: 90px;
+}
+
+
+.mapImg{    /* hablemos.html */
+height: 120px;
+width: 140px;
+}
+
+.containerForm{ /* hablemos.html */
+  text-align: center;
+ 
+  flex-direction: column;
+}
+
+
+.containerFooter{
+  background-color: black;
+}
+
+.containerFooter h5{
+  color: azure;
+  text-align: center;
+}
