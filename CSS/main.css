@@ -42,7 +42,9 @@ align-items: center;
 
 .subMenu{
   display: flex;
+  flex-wrap: nowrap;
   gap: 17px
+  
 }
 
 .containerIlust{  /* index.html */
@@ -77,14 +79,16 @@ gap: 45px;
 
 
 .mapImg{    /* hablemos.html */
-height: 120px;
-width: 140px;
+padding: 20px;
+display: flex;
+flex-direction: column;
+width: 20%;
 }
 
 .containerForm{ /* hablemos.html */
-  text-align: center;
- 
   flex-direction: column;
+  justify-content: center;
+  display:flex;
 }
 
 
