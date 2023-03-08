@@ -100,3 +100,7 @@ width: 20%;
   color: azure;
   text-align: center;
 }
+
+.translate:hover {
+  transform: translate(0px, -10px);
+}
