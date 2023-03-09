@@ -63,7 +63,14 @@ align-items: baseline;
  .cards{  /* nuestro_trabajo.html */
 display: flex;
 gap: 45px;
+background-color: rgb(243, 186, 44);
  }
+
+@media screen and (max-width: 1050px) and (min-width: 500px) {
+  .cards {
+    background-color: darkgrey;
+  }
+}
 
 .card img{  /* nuestro_trabajo.html */
   width: 100%;
@@ -88,8 +95,11 @@ width: 20%;
 .containerForm{ /* hablemos.html */
   flex-direction: column;
   justify-content: center;
-  display:flex;
+  display:grid;
+  grid-template-columns: 200px 100px 200px 100px;
+  grid-template-rows: 60px 100px 60px 100px;
 }
+
 
 
 .containerFooter{
@@ -101,6 +111,10 @@ width: 20%;
   text-align: center;
 }
 
+.translate {
+  transition: 2s;
+}
+
 .translate:hover {
-  transform: translate(0px, -10px);
+  transform: translate(0px, -25px);
 }
