@@ -70,6 +70,9 @@ background-color: rgb(243, 186, 44);
   .cards {
     background-color: darkgrey;
   }
+  .textos {
+    color:white;
+  }
 }
 
 .card img{  /* nuestro_trabajo.html */
