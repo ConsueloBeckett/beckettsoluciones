@@ -1,0 +1,28 @@
+@media screen and (max-width: 1050px) and (min-width: 500px) {
+    .cards {
+      background-color: darkgrey;
+    }
+  }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  } 
+
+  $mainColour: rgb(243, 186, 44);
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap');
+
+  ul{
+    list-style-type:none;
+  }
+  
+  h3, h4, a {
+    color: black;
+    background-color: rgb(243, 186, 44);
+    text-align: center;
+    text-decoration: none;
+    }  
+  

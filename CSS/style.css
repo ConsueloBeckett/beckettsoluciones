@@ -1,1 +1,113 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap");
+@media screen and (max-width: 1050px) and (min-width: 500px) {
+  .cards {
+    background-color: darkgrey;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h3, h4, a {
+  color: black;
+  background-color: rgb(243, 186, 44);
+  text-align: center;
+  text-decoration: none;
+}
+
+.workers, work, services, work {
+  padding: 40px;
+}
+.workers .cards, work .cards, services .cards, work .cards {
+  display: flex;
+  gap: 45px;
+  background-color: rgb(243, 186, 44);
+}
+.workers .cards .card img, work .cards .card img, services .cards .card img, work .cards .card img {
+  width: 80%;
+}
+
+.logoImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.subMenu {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 17px;
+}
+
+.containerIlust {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.mapImg {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.containerForm {
+  flex-direction: column;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 200px 100px 200px 100px;
+  grid-template-rows: 60px 100px 60px 100px;
+}
+
+body {
+  background-color: rgb(223, 213, 220);
+}
+
+.containerFooter {
+  background-color: black;
+}
+.containerFooter h5 {
+  color: azure;
+  text-align: center;
+}
+
+.headline {
+  padding: 10px 35px;
+  background-color: rgb(243, 186, 44);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headline .logoImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.headline .nav {
+  background-color: rgb(243, 186, 44);
+}
+
+.containerIlust { /* index.html */
+  background-image: url("../img/index/IlustracionB.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.translate {
+  transition: 2s;
+}
+.translate:hover {
+  transform: translate(0px, -25px);
+}/*# sourceMappingURL=style.css.map */

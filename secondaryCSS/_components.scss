@@ -1,0 +1,51 @@
+.workers, work, services, work {
+    padding: 40px;
+
+    .cards {
+        display: flex;
+        gap: 45px;
+        background-color: $mainColour;
+        
+        .card img {
+            width:80%;
+        }
+    }
+}
+
+.logoImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+  }
+  
+  .subMenu{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 17px
+    
+  }
+  
+  .containerIlust{  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+  }
+
+  .mapImg{    
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    }
+    
+    .containerForm{ 
+      flex-direction: column;
+      justify-content: center;
+      display:grid;
+      grid-template-columns: 200px 100px 200px 100px;
+      grid-template-rows: 60px 100px 60px 100px;
+    }
+
+    
