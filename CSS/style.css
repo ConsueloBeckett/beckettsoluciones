@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap");
-@media screen and (max-width: 1050px) and (min-width: 500px) {
-  .cards {
-    background-color: darkgrey;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -22,28 +17,32 @@ h3, h4, a {
   text-decoration: none;
 }
 
-.workers, work, services, work {
+@media screen and (min-width: 750px) {
+  .cards {
+    background-color: darkgrey;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .cards {
+    background-color: darkgrey;
+  }
+}
+.workers, .work, .services, .works {
   padding: 40px;
 }
-.workers .cards, work .cards, services .cards, work .cards {
+.workers .cards, .work .cards, .services .cards, .works .cards {
   display: flex;
   gap: 45px;
   background-color: rgb(243, 186, 44);
 }
-.workers .cards .card img, work .cards .card img, services .cards .card img, work .cards .card img {
-  width: 80%;
+.workers .cards .card img, .work .cards .card img, .services .cards .card img, .works .cards .card img {
+  width: 30%;
 }
 
-.logoImg {
+.headline-logoImg {
   width: 30px;
   height: 30px;
   border-radius: 10px;
-}
-
-.subMenu {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 17px;
 }
 
 .containerIlust {
