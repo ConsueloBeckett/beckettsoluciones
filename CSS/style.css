@@ -22,8 +22,8 @@ h3, h4, a {
     background-color: darkgrey;
   }
 }
-@media screen and (max-width: 1050px) {
-  .cards {
+@media screen and (min-width: 750px) and (max-width: 1050px) {
+  .cards .cards {
     background-color: darkgrey;
   }
 }
