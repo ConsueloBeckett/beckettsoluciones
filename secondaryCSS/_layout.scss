@@ -1,40 +1,47 @@
 body {
-    background-color: rgb(223, 213, 220);
-  }
+  background-color: rgb(223, 213, 220);
 
-  .containerFooter{
-    background-color: black;
- 
-  & h5{
-    color: azure;
-    text-align: center;
-  }
-}
-
-.headline {
+  .headline {
   padding: 10px 35px;
   background-color: rgb(243, 186, 44);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+ 
+  justify-content: flex-start;
+  align-items: flex-end;
 
   .logoImg {
-      width: 50px;
-      height: 50px;
-      border-radius: 10px;
-    }
-    
-    .nav {
-      background-color: rgb(243, 186, 44);
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
 
-    }
   }
 
-  .containerIlust{  /* index.html */
-    background-image: url("../img/index/IlustracionB.png");
-    background-size:cover;
-    height: 100vh;
+  .nav {
+    background-color:$mainColour;
+    width: 100%;
+    float: right;
+    margin: 0 0 1em 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: baseline;
+    align-items: flex-end;
+  }}
+
+  .containerIlust {
+    /* index.html */
+    background-image: url("../img/index/IlustracionB.png") center center;
+    height: 100vh;
+    grid-row: 3/4;
+    grid-column:3/4;
+  background-position: center;
+    
+  }}
+  
+    .containerFooter {
+      background-color: black;
+    
+      & h5 {
+        color: azure;
+        text-align: center;
+      }
     }
+
+  

@@ -3,28 +3,13 @@
 
   .cards {
     display: flex;
-    gap: 45px;
+    gap: 20px;
     background-color: $mainColour;
 
     .card img {
       width: 30%;
     }
   }
-}
-
-.headline {
-  &-logoImg {
-    width: 30px;
-    height: 30px;
-    border-radius: 10px;
-  }
-  
-}
-.containerIlust {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }
 
 .mapImg {
@@ -35,9 +20,9 @@
 }
 
 .containerForm {
-  flex-direction: column;
+  
   justify-content: center;
   display: grid;
   grid-template-columns: 200px 100px 200px 100px;
-  grid-template-rows: 60px 100px 60px 100px;
+  
 }

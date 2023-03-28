@@ -6,24 +6,31 @@
   font-family: "Montserrat", sans-serif;
 }
 
-ul {
+ul, a {
   list-style-type: none;
+  width: 100px;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
 }
 
-h3, h4, a {
+h3 {
   color: black;
   background-color: rgb(243, 186, 44);
   text-align: center;
   text-decoration: none;
 }
 
-@media screen and (min-width: 750px) {
-  .cards {
-    background-color: darkgrey;
-  }
+h4 {
+  color: black;
+  background-color: rgb(243, 186, 44);
+  display: flex;
+  text-align: justify;
 }
-@media screen and (min-width: 750px) and (max-width: 1050px) {
-  .cards .cards {
+
+@media screen and (max-width: 1050px) and (min-width: 750px) {
+  .cards {
     background-color: darkgrey;
   }
 }
@@ -32,24 +39,11 @@ h3, h4, a {
 }
 .workers .cards, .work .cards, .services .cards, .works .cards {
   display: flex;
-  gap: 45px;
+  gap: 20px;
   background-color: rgb(243, 186, 44);
 }
 .workers .cards .card img, .work .cards .card img, .services .cards .card img, .works .cards .card img {
   width: 30%;
-}
-
-.headline-logoImg {
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
-}
-
-.containerIlust {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }
 
 .mapImg {
@@ -60,15 +54,41 @@ h3, h4, a {
 }
 
 .containerForm {
-  flex-direction: column;
   justify-content: center;
   display: grid;
   grid-template-columns: 200px 100px 200px 100px;
-  grid-template-rows: 60px 100px 60px 100px;
 }
 
 body {
   background-color: rgb(223, 213, 220);
+}
+body .headline {
+  padding: 10px 35px;
+  background-color: rgb(243, 186, 44);
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+body .headline .logoImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+body .headline .nav {
+  background-color: rgb(243, 186, 44);
+  width: 100%;
+  float: right;
+  margin: 0 0 1em 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+}
+body .containerIlust {
+  /* index.html */
+  background-image: url("../img/index/IlustracionB.png") center center;
+  height: 100vh;
+  grid-row: 3/4;
+  grid-column: 3/4;
+  background-position: center;
 }
 
 .containerFooter {
@@ -77,31 +97,6 @@ body {
 .containerFooter h5 {
   color: azure;
   text-align: center;
-}
-
-.headline {
-  padding: 10px 35px;
-  background-color: rgb(243, 186, 44);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.headline .logoImg {
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;
-}
-.headline .nav {
-  background-color: rgb(243, 186, 44);
-}
-
-.containerIlust { /* index.html */
-  background-image: url("../img/index/IlustracionB.png");
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
 }
 
 .translate {
