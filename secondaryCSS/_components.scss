@@ -1,14 +1,24 @@
 .workers, .work, .services, .works {
-  padding: 40px;
+  padding: 30px;
 
   .cards {
     display: flex;
-    gap: 20px;
+    gap: 5px;
     background-color: $mainColour;
 
+    .card translate {
+      display: flex;
+      justify-content: center;
+
     .card img {
-      width: 30%;
-    }
+      width: 50%;
+     }
+   }
+  .textos translate {
+    display: flex;
+    align-content: center;
+   }
+
   }
 }
 

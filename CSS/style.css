@@ -29,21 +29,36 @@ h4 {
   text-align: justify;
 }
 
-@media screen and (max-width: 1050px) and (min-width: 750px) {
+p {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  bottom: -10px;
+}
+
+@media screen and (max-width: 768px) {
   .cards {
     background-color: darkgrey;
   }
 }
 .workers, .work, .services, .works {
-  padding: 40px;
+  padding: 30px;
 }
 .workers .cards, .work .cards, .services .cards, .works .cards {
   display: flex;
-  gap: 20px;
+  gap: 5px;
   background-color: rgb(243, 186, 44);
 }
-.workers .cards .card img, .work .cards .card img, .services .cards .card img, .works .cards .card img {
-  width: 30%;
+.workers .cards .card translate, .work .cards .card translate, .services .cards .card translate, .works .cards .card translate {
+  display: flex;
+  justify-content: center;
+}
+.workers .cards .card translate .card img, .work .cards .card translate .card img, .services .cards .card translate .card img, .works .cards .card translate .card img {
+  width: 50%;
+}
+.workers .cards .textos translate, .work .cards .textos translate, .services .cards .textos translate, .works .cards .textos translate {
+  display: flex;
+  align-content: center;
 }
 
 .mapImg {
