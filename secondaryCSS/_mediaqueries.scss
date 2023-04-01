@@ -1,7 +1,22 @@
 
 @media screen and (max-width: 768px) {
-  .cards {
-    background-color: darkgrey;
+  .cards, .containerIlust {
+    background-color: white;
+    flex-direction: column;
+  }
   
-}  
+  h3{
+    background-color: bisque;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .cards, .containerIlust {
+    background-color: black;
+    flex-direction: column;
+  }
+  
+  h3{
+    background-color: bisque;
+  }
 }

@@ -1,17 +1,15 @@
-.workers, .work, .services, .works {
-  padding: 10px;
-
+.workers, .work, .services, .works, .index {
+  padding: 2px;
+  align-items: center;
+  justify-content: center;
+  
   .cards {
     display: flex;
-    gap: 5px;
-    background-color: $mainColour;
-
-    .card translate {
-      display: flex;
-      justify-content: center;
+    gap: 2px;
+    justify-content:space-evenly;
 
     .card img {
-      width: 50%;
+     width: 100%;
      }
    }
   .textos translate {
@@ -20,17 +18,15 @@
    }
 
   }
-}
 
 .mapImg {
-  padding: 20px;
-  display: flex;
+  padding: 10px;
+  display:flex;
   flex-direction: column;
   width: 30%;
 }
 
-.containerForm {
-  
+.containerForm{
   justify-content: center;
   display: grid;
   grid-template-columns: 200px 100px 200px 100px;

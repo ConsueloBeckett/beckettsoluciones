@@ -9,8 +9,9 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap');
 
-  ul, a {
+  ul {
     list-style-type:none;
+    text-decoration: none;
     width: 100px;
     margin: auto;
     padding: 0; 
@@ -37,4 +38,5 @@
     text-decoration: none;
     color: black;
     bottom: -10px;
+    background-color: &$mainColour;
   }

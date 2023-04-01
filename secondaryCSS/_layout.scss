@@ -2,17 +2,17 @@ body {
   background-color: rgb(223, 213, 220);
 
   .headline {
-  padding: 10px 35px;
   width: 100%;
   background-color: rgb(243, 186, 44);
- 
   justify-content: flex-start;
   align-items: flex-end;
 
   .logoImg {
-    width: 30px;
-    height: 30px;
-    border-radius: 10px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
 
   }
 
@@ -20,28 +20,36 @@ body {
     background-color:$mainColour;
     width: 100%;
     float: right;
-    margin: 0 0 1em 0;
-    padding: 0;
+    margin: 0 0 3em 0;
+    padding-right: 2rem;
     display: flex;
     align-items: flex-end;
-  }}
+
+    & nav-item{
+      list-style-type:none;
+      text-decoration: none;
+    }
+    }
+  }
 
   .containerIlust {
     /* index.html */
     background-image: url("../img/index/IlustracionB.png") center center;
-    height: 100vh;
-    grid-row: 3/4;
-    grid-column:3/4;
-  background-position: center;
-    
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 200px 100px 200px 100px;
   }}
   
     .containerFooter {
       background-color: black;
+      width: 100%;
+      text-align: center;
+      padding-top: 1rem;
+      position: absolute;
+      top:100%;
     
       & h5 {
         color: azure;
-        text-align: center;
       }
     }
 
