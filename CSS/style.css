@@ -30,14 +30,6 @@ h4 {
   text-align: justify;
 }
 
-p {
-  list-style-type: none;
-  text-decoration: none;
-  color: black;
-  bottom: -10px;
-  background-color: p rgb(243, 186, 44);
-}
-
 @media screen and (max-width: 768px) {
   .cards, .containerIlust {
     background-color: white;
@@ -74,17 +66,31 @@ p {
   align-content: center;
 }
 
-.mapImg {
-  padding: 10px;
+.contenedor_hablemos {
+  max-width: 800px;
   display: flex;
-  flex-direction: column;
-  width: 30%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.contenedor_hablemos .mapImg {
+  flex: 1;
+  margin-right: 20px;
+  max-width: 300px;
+}
+.contenedor_hablemos .texto_ubicacion {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-indent: 20px;
+  flex: 2;
 }
 
 .containerForm {
-  justify-content: center;
-  display: grid;
-  grid-template-columns: 200px 100px 200px 100px;
+  min-height: 100px;
+  width: 450px;
+  margin: 10px 30px 30px 5px;
+  padding: 5%;
+  align-content: center;
 }
 
 body {
@@ -125,14 +131,16 @@ body .containerIlust {
 }
 
 .containerFooter {
-  background-color: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
+  background-color: #000000;
+  color: #fff;
   text-align: center;
-  padding-top: 1rem;
-  position: absolute;
-  top: 100%;
+  padding: 20px;
 }
-.containerFooter h5 {
+.containerFooter-h5 {
   color: azure;
 }
 

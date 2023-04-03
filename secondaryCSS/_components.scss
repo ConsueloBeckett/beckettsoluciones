@@ -19,16 +19,32 @@
 
   }
 
+  .contenedor_hablemos{
+    max-width: 800px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between; 
+    align-items: flex-end;
+
 .mapImg {
-  padding: 10px;
-  display:flex;
-  flex-direction: column;
-  width: 30%;
+ flex: 1;
+ margin-right: 20px;
+ max-width: 300px;
+}
+
+.texto_ubicacion{
+padding-left: 20px;
+padding-right: 20px;
+text-indent: 20px;
+ flex: 2;
+}
 }
 
 .containerForm{
-  justify-content: center;
-  display: grid;
-  grid-template-columns: 200px 100px 200px 100px;
-  
+  min-height: 100px;
+  width: 450px;
+  margin:10px 30px 30px 5px;
+  padding: 5%;
+  align-content: center;
+
 }
