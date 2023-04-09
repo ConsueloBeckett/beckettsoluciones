@@ -49,25 +49,25 @@ h4 {
   }
 }
 .trabajo,
-.clientes {
+.works {
   padding: 5px;
   align-items: center;
   justify-content: center;
 }
 .trabajo .cards,
-.clientes .cards {
+.works .cards {
   margin-left: 5px;
   display: flex;
   gap: 2px;
   justify-content: space-evenly;
 }
 .trabajo .cards .card img,
-.clientes .cards .card img {
+.works .cards .card img {
   width: 100%;
   border: 2px solid black;
 }
 .trabajo .textos translate,
-.clientes .textos translate {
+.works .textos translate {
   display: flex;
   align-content: center;
 }
