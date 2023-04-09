@@ -14,12 +14,20 @@
 
 @keyframes slidein {
   from {
-    margin-left: 100%;
-    width: 100%
+    margin-left: 80%;
+    width: 50%
   }
 
   to {
     margin-left: 0%;
-    width: 100%;
+    width: 50%;
   }
+}
+
+ 
+.obras:hover {
+  background-image: url('../img/obras/mallSport_hover.png');
+}
+.obras:hover img  {
+  opacity: 0.40;
 }

@@ -48,38 +48,36 @@ h4 {
     background-color: bisque;
   }
 }
-.workers, .work, .works {
+.trabajo,
+.clientes {
   padding: 5px;
   align-items: center;
   justify-content: center;
 }
-.workers .cards, .work .cards, .works .cards {
+.trabajo .cards,
+.clientes .cards {
+  margin-left: 5px;
   display: flex;
   gap: 2px;
   justify-content: space-evenly;
 }
-.workers .cards .card img, .work .cards .card img, .works .cards .card img {
+.trabajo .cards .card img,
+.clientes .cards .card img {
   width: 100%;
   border: 2px solid black;
 }
-.workers .textos translate, .work .textos translate, .works .textos translate {
+.trabajo .textos translate,
+.clientes .textos translate {
   display: flex;
   align-content: center;
 }
 
-.contenedor_hablemos { /*hablemos*/
+.contenedor_hablemos {
+  /*hablemos*/
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 10px;
   margin: 0 auto;
-}
-.contenedor_hablemos .container_map {
-  align-items: center;
-  border: 2px solid black;
-}
-.contenedor_hablemos .container_map .mapImg {
-  width: 100%;
-  height: auto;
 }
 .contenedor_hablemos .containerForm {
   height: 100%;
@@ -88,30 +86,54 @@ h4 {
   text-align: center;
 }
 
-.container_obras { /* obras*/
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px;
+.container_portafolio {
+  /*obras*/
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  padding-left: 20px;
 }
-.container_obras .obras {
-  padding: 10px;
+.container_portafolio .obras {
+  max-width: 100%;
+  margin-left: 5px;
+  border: 2px solid black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
-.container_obras .obras img {
-  width: 100%;
-  margin: 0 auto;
+.container_portafolio .obras-img {
+  max-width: 100%;
   height: auto;
-  border: 2px solid black;
+  transition: 0.5s;
+  padding-bottom: 2px;
+  background-position: center;
+  flex: 1;
+}
+.container_portafolio .obras h5 {
+  margin-bottom: 2px;
+  padding-top: 3px;
+  color: white;
+  background-color: rgb(243, 186, 44);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.container_portafolio .obras text {
+  bottom: 0;
+  max-width: 80%;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
 }
 
-.container_bienvenido { /* index.html */
+.container_bienvenido {
+  /* index.html */
   display: flex;
   margin-top: 20px;
 }
 .container_bienvenido .imgIlust {
   float: right;
   align-items: center;
-  margin: 0 auto;
   border: 2px solid black;
 }
 .container_bienvenido .containerText {
@@ -121,6 +143,48 @@ h4 {
   height: 20%;
   float: left;
   padding-left: 10px;
+}
+
+.container {
+  padding: 20px;
+  margin: auto;
+  max-width: 800px;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: rgb(243, 186, 44);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
 }
 
 body {
@@ -186,11 +250,18 @@ footer .footer_text {
 
 @keyframes slidein {
   from {
-    margin-left: 100%;
-    width: 100%;
+    margin-left: 80%;
+    width: 50%;
   }
   to {
     margin-left: 0%;
-    width: 100%;
+    width: 50%;
   }
+}
+.obras:hover {
+  background-image: url("../img/obras/mallSport_hover.png");
+}
+
+.obras:hover img {
+  opacity: 0.4;
 }/*# sourceMappingURL=style.css.map */
