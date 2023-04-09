@@ -1,15 +1,17 @@
-.workers, .work, .services, .works, .index {
-  padding: 2px;
+.workers, .work, .works {
+  padding: 5px;
   align-items: center;
   justify-content: center;
-  
+
   .cards {
     display: flex;
     gap: 2px;
     justify-content:space-evenly;
+    
 
     .card img {
      width: 100%;
+     border: 2px solid black;
      }
    }
   .textos translate {
@@ -19,32 +21,67 @@
 
   }
 
-  .contenedor_hablemos{
-    max-width: 800px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between; 
-    align-items: flex-end;
+.contenedor_hablemos{         /*hablemos*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  margin: 0 auto;
 
-.mapImg {
- flex: 1;
- margin-right: 20px;
- max-width: 300px;
-}
+.container_map{
 
-.texto_ubicacion{
-padding-left: 20px;
-padding-right: 20px;
-text-indent: 20px;
- flex: 2;
-}
-}
+ align-items: center;
+ border: 2px solid black;
+
+ .mapImg {
+ width: 100%;
+ height: auto;
+}}
 
 .containerForm{
-  min-height: 100px;
-  width: 450px;
-  margin:10px 30px 30px 5px;
-  padding: 5%;
-  align-content: center;
+  height: 100%;
+   width: 100%;
+   padding: 5%;
+   text-align: center;
+ }}
 
+
+
+.container_obras{         /* obras*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;;
+
+.obras{
+  padding: 10px;
+  justify-content: center;
 }
+
+.obras img {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  border: 2px solid black;
+}
+}
+
+.container_bienvenido{          /* index.html */
+  display: flex;
+  margin-top: 20px;
+  
+   .imgIlust {              
+      float: right;
+      align-items: center;
+      margin: 0 auto;
+      border: 2px solid black;
+    }
+  
+    .containerText{
+      align-items: center;
+      width: 40%;
+      margin: 0 auto;
+      height: 20%;
+      float: left;
+      padding-left: 10px;
+    }
+  }
+  

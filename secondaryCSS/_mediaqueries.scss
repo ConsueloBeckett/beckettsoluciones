@@ -1,6 +1,6 @@
 
 @media screen and (max-width: 768px) {
-  .cards, .containerIlust {
+  .cards, .container_bienvenido{
     background-color: white;
     flex-direction: column;
   }
@@ -10,8 +10,8 @@
   }
 }
 
-@media screen and (min-width: 1500px) {
-  .cards, .containerIlust {
+@media screen and (min-width: 1781px) {
+  .cards, .container_bienvenido{
     background-color: black;
     flex-direction: column;
   }

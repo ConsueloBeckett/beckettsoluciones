@@ -1,4 +1,8 @@
 body {
+  display:grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  min-height: 100vh;
   background-color: rgb(223, 213, 220);
 
   .headline {
@@ -31,28 +35,21 @@ body {
     }
     }
   }
+}
 
-  .containerIlust {
-    /* index.html */
-    background-image: url("../img/index/IlustracionB.png") center center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 200px 100px 200px 100px;
-  }}
-  
-  .containerFooter {
-    position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #000000;
-  color: #fff;
-  text-align: center;
-  padding: 20px;  
-    
-      &-h5 {
-        color: azure;
+  footer{
+    color: black;
+    background-color: black;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    position: sticky;
+    top: 100%;  
+
+        .footer_text {
+          justify-content: center;
+          color: azure;
+        }
       }
-    }
-
-  
+    

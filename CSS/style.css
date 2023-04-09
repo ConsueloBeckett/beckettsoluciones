@@ -31,7 +31,7 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
-  .cards, .containerIlust {
+  .cards, .container_bienvenido {
     background-color: white;
     flex-direction: column;
   }
@@ -39,8 +39,8 @@ h4 {
     background-color: bisque;
   }
 }
-@media screen and (min-width: 1500px) {
-  .cards, .containerIlust {
+@media screen and (min-width: 1781px) {
+  .cards, .container_bienvenido {
     background-color: black;
     flex-direction: column;
   }
@@ -48,52 +48,86 @@ h4 {
     background-color: bisque;
   }
 }
-.workers, .work, .services, .works, .index {
-  padding: 2px;
+.workers, .work, .works {
+  padding: 5px;
   align-items: center;
   justify-content: center;
 }
-.workers .cards, .work .cards, .services .cards, .works .cards, .index .cards {
+.workers .cards, .work .cards, .works .cards {
   display: flex;
   gap: 2px;
   justify-content: space-evenly;
 }
-.workers .cards .card img, .work .cards .card img, .services .cards .card img, .works .cards .card img, .index .cards .card img {
+.workers .cards .card img, .work .cards .card img, .works .cards .card img {
   width: 100%;
+  border: 2px solid black;
 }
-.workers .textos translate, .work .textos translate, .services .textos translate, .works .textos translate, .index .textos translate {
+.workers .textos translate, .work .textos translate, .works .textos translate {
   display: flex;
   align-content: center;
 }
 
-.contenedor_hablemos {
-  max-width: 800px;
-  display: flex;
+.contenedor_hablemos { /*hablemos*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
   margin: 0 auto;
-  justify-content: space-between;
-  align-items: flex-end;
 }
-.contenedor_hablemos .mapImg {
-  flex: 1;
-  margin-right: 20px;
-  max-width: 300px;
+.contenedor_hablemos .container_map {
+  align-items: center;
+  border: 2px solid black;
 }
-.contenedor_hablemos .texto_ubicacion {
-  padding-left: 20px;
-  padding-right: 20px;
-  text-indent: 20px;
-  flex: 2;
+.contenedor_hablemos .container_map .mapImg {
+  width: 100%;
+  height: auto;
+}
+.contenedor_hablemos .containerForm {
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+  text-align: center;
 }
 
-.containerForm {
-  min-height: 100px;
-  width: 450px;
-  margin: 10px 30px 30px 5px;
-  padding: 5%;
-  align-content: center;
+.container_obras { /* obras*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+.container_obras .obras {
+  padding: 10px;
+  justify-content: center;
+}
+.container_obras .obras img {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  border: 2px solid black;
+}
+
+.container_bienvenido { /* index.html */
+  display: flex;
+  margin-top: 20px;
+}
+.container_bienvenido .imgIlust {
+  float: right;
+  align-items: center;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+.container_bienvenido .containerText {
+  align-items: center;
+  width: 40%;
+  margin: 0 auto;
+  height: 20%;
+  float: left;
+  padding-left: 10px;
 }
 
 body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  min-height: 100vh;
   background-color: rgb(223, 213, 220);
 }
 body .headline {
@@ -122,25 +156,19 @@ body .headline .nav nav-item {
   list-style-type: none;
   text-decoration: none;
 }
-body .containerIlust {
-  /* index.html */
-  background-image: url("../img/index/IlustracionB.png") center center;
-  justify-content: center;
-  display: grid;
-  grid-template-columns: 200px 100px 200px 100px;
-}
 
-.containerFooter {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+footer {
+  color: black;
+  background-color: black;
+  border-radius: 5px;
   width: 100%;
-  background-color: #000000;
-  color: #fff;
   text-align: center;
-  padding: 20px;
+  padding-top: 1rem;
+  position: sticky;
+  top: 100%;
 }
-.containerFooter-h5 {
+footer .footer_text {
+  justify-content: center;
   color: azure;
 }
 
@@ -149,4 +177,20 @@ body .containerIlust {
 }
 .translate:hover {
   transform: translate(0px, -25px);
+}
+
+.imgIlust {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
